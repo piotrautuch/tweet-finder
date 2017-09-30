@@ -1,0 +1,153 @@
+body {
+	width: 100%;
+	font-family: "Open Sans", sans-serif;
+	color: white;
+	background: #282830;
+}
+
+#logo{
+	border-radius: 20px;
+	border: 4px solid white;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	background:#282830;
+	padding: 10px 25px;
+}
+#logo:hover{
+	background: white;
+	color: #282830;
+}
+.logo{
+	box-sizing: border-box;
+	padding: 15px;
+	margin: 5px;
+}
+.notify{
+	box-sizing: border-box;
+	padding: 3px;
+	font-size: 1.4em;
+}
+
+.tweet{
+	text-align: center;
+	border-radius: 20px;
+	padding: 35px;
+	box-sizing: border-box;
+	border: 4px solid white;
+}
+.box{
+	text-align: center;
+	padding: 40px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.main{
+	margin: 80px 210px 20px 210px;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+h1{
+	font-size: 2.2em;
+}
+
+h2{
+	font-size: 1.8em;
+}
+
+.text{
+	font-size: 1.6em;
+	box-sizing: border-box;
+}
+
+footer{
+	width:100%;
+	height:100px;
+	position:relative;
+	bottom:0;
+	left:0;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+a:selection{
+	text-decoration: none;
+}
+.form{
+	box-sizing: border-box;
+}
+
+.searchbar {
+	background-color: #282830;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: : 5px solid white;
+	font-size:1.7em;
+	padding: 5px;
+	color: white;
+	width: auto;
+}
+
+
+
+.submit{
+	visibility: hidden;
+}
+
+.analysis{
+	display: flex;
+	flex-direction: row;
+	font-size: 1.2em;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.item{
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: left;
+	padding: 12px;
+}
+
+@media screen and (max-device-width: 600px) {
+	body{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.main{
+		padding: 5px;
+	}
+	.form{
+		width: 300px;
+		margin: 5px;
+	}
+	.searchbar{
+		box-sizing: border-box;
+		width: 300px;
+		padding: 2px;
+	}
+
+	.tweet{
+		padding: 20px;
+		box-sizing: border-box;
+		background: #3e3e4c;
+		border-radius: 20px;
+	}
+
+	h1{
+		font-size: 1.3em;
+	}
+
+	h2{
+		font-size: 1.1em;
+	}
+	.text{
+		font-size: 0.9em;
+		box-sizing: border-box;
+	}

@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block tweet %}
+<div class="box">
+  <h2>Statistics for the last {{count}} tweets that included '{{keyword}}'</h2>
+  <div class="analysis">
+  {% for stat in analysis.items() %}
+  <div class="item">
+    <p>
+      <b> {{ stat[0] }}: </b>{{ stat[1] }}
+    </p>
+  </div>
+{% endfor %}
+</div>
+</div>
+<h2>Search results</h2>
+{% for tweet in data %}
+<div class="main">
+  <div class="tweet">
+  	<h2><a href="http://twitter.com/{{ tweet.screen_name }}">{{ tweet.author }}</a></h2>
+  	<p class="text"> {{ tweet.text }} </p>
+  	<p>{{ tweet.datestamp }}; Source: {{ tweet.source }}</p>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

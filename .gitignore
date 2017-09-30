@@ -1,0 +1,6 @@
+venv/
+tweetapi.txt
+__pycache__/
+*.pyc
+app/__pycache__/
+

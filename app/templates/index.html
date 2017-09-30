@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block index %}
+<div class="notify">
+  <p>
+    ✨Type in a keyword and the most recent tweets that include it will magically appear✨
+  </p>
+</div>
+<div class="form">
+  <form action="" method="post" name="keyword">
+    <p>
+      {{ form.keyword(size=89, class_="searchbar") }}
+    </p>
+    <p><input type="submit" value="Search" class="submit"></p>
+  </form>
+</div>
+{% endblock %}
